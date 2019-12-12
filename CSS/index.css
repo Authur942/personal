@@ -1,0 +1,308 @@
+/* 我的基础样式 */
+.clear-padding {
+    padding: 0 !important;
+}
+
+.box {
+    padding: 0 !important;
+}
+
+/* 便签动画 */
+#mySidenav {
+    position: fixed;
+    top: 420px;
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -130px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+#mySidenav a:hover {
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#about {
+    top: 20px;
+}
+
+#blog {
+    top: 80px;
+}
+
+#projects {
+    top: 140px;
+}
+
+#contact {
+    top: 200px;
+    background-color: #555
+}
+
+#about,
+#contact,
+#projects,
+#blog {
+    background-color: #0d3d88;
+}
+
+/* 特殊字体 */
+.sp {
+    font-family: 'Kunstler Script', 'Palace Script MT', 'Vladimir Script';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 80px;
+}
+
+.contentone {
+    background-image: url('../static/images/lanbojini.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 800px;
+    margin-top: -20px;
+}
+
+.contentone-shadow {
+    background-color: #000;
+    opacity: 0.5;
+    height: 92px;
+    width: 100%;
+    /* display: inline-block; */
+}
+
+.contentone-shadow>h1 {
+    font-size: 80px;
+    display: inline;
+    color: #ffffff;
+}
+
+/*导航栏 */
+nav {
+    border-bottom: 2px solid #ffffff !important;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* 标志样式 */
+.icon1 {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    transition: all 0.8s ease;
+}
+.icon1:hover{
+    transform: scale(1.2);
+}
+
+
+.text-box {
+    height: 350px;
+    text-align: center;
+    /* border: 1px solid #ffffff; */
+    margin-top: 200px;
+    /* line-height: 800px; */
+}
+
+.text-box>h1 {
+    color: #ffffff;
+    font-size: 80px;
+}
+
+.text-box>ul>li {
+    margin-top: 20px;
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+.text-box>ul>li>h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/* 网站自我介绍部分 */
+.introduce {
+    background-color: #ffffff;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+}
+
+.text-box2 {
+    margin-top: 70px;
+    text-align: center;
+    width: 1000px;
+    height: auto;
+
+}
+
+.text-box2>p {
+    /* text-indent: 0px; */
+    text-shadow: 2px 2px 2px #717171;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 中间汽车展示部分  */
+.content-person {
+    width: 100%;
+    text-align: center;
+}
+
+.content-person>.person-item {
+    display: inline-block;
+    padding-top: 20px;
+    /* margin-top: 50px; */
+    /* padding-top: 20px; */
+}
+
+.person-ct>p {
+    height: 450px;
+}
+
+.person-img>img {
+    width: 100%;
+    height: auto;
+    transform: none;
+    transition: all 1.2s ease-out;
+    -webkit-transition: all 1.2s ease-out;
+    /* margin-top: 350px; */
+}
+
+.person-img>img:hover {
+    opacity: .9;
+    transform: matrix(1, 0, 0, 1, -30, 0);
+    
+}
+
+.person-title {
+    font-weight: bold;
+}
+
+/* 轮播图头部按钮样式 */
+.text-bt {
+    text-align: center;
+    height: 70px;
+    background-color: #0d3d88;
+    /* border: 1px solid #000; */
+    box-shadow: 0px 10px 5px #000;
+    color: #ffffff;
+    transform: none;
+    transition: all 0.6s linear;
+
+}
+
+.text-bt>h1 {
+    font-family: 'Kunstler Script', 'Palace Script MT', 'Vladimir Script';
+    font-weight: bold;
+    display: inline;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.text-bt:hover {
+    opacity: 0.9;
+    transform: scaleY(1.3);
+    
+}
+
+/* 轮播图 */
+
+.info-title {
+    margin: 40px 0;
+    height: 80px;
+    text-align: center;
+    /* margin-bottom: 40px; */
+}
+
+.info-title>img {
+    display: inline;
+}
+
+/* 轮播图左侧 */
+.info-left {
+    height: 612px;
+    flex-direction: column;
+}
+/* 窗帘 */
+.info-left div {
+    background-color: #0d3d88;
+    flex: 1;
+}
+
+.conner {
+    position: relative;
+    width: 50%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.conner:hover .overlay {
+    bottom: 100%;
+    height: 0;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    /* font-size: 20px; */
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* 底部 */
+.footer {
+    text-align: center;
+    background-color: #ffffff;
+    line-height: 24px;
+    padding: 50px 0;
+}
+
+.footer i {
+    font-style: normal;
+    margin: 0 5px;
+    line-height: 50px;
+}
+
+.footer p {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.footer a {
+    color: #000000;
+}
+
+.footer a:hover {
+    color: #0d3d88;
+    text-decoration: none;
+}
+
+.web {
+    padding-top: 30px;
+}
+
+.web img {
+    margin: 0 12px;
+}

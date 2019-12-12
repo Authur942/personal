@@ -1,0 +1,53 @@
+.clear-padding {
+    padding: 0 !important;
+}
+
+/* 动态搜索框 */
+.dynamic-search{
+    position: fixed;
+    z-index: 999;
+    top: 47%;
+    left: 47%;
+    /* background-color: #ffffff; */
+}
+.dynamic-search[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: all 0.8s linear;
+    transition: all 0.8s linear; 
+    /* -webkit-transition: border 1.8s linear;
+    transition: border 1.8s linear;  */
+}
+
+.dynamic-search[type=text]:focus {
+    width: 60%;
+    border-radius: 15px;
+    outline: none;
+    left: 20%;
+    /* left: 40%; */
+}
+
+/* 右侧导航项目 */
+.navbar-right li a {
+    color: #ffffff !important;
+}
+
+.navbar-right li a:hover {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dropdown-menu li a {
+    color: #000000 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
