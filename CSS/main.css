@@ -2,14 +2,18 @@
     padding: 0 !important;
 }
 
-/* 动态搜索框 */
-.dynamic-search{
-    position: fixed;
-    z-index: 999;
-    top: 47%;
-    left: 47%;
-    /* background-color: #ffffff; */
+/* 首体文字、时间 */
+.time{
+    margin-top: 120px;
 }
+.authur-txt,.time>span{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* 动态搜索框 */
 .dynamic-search[type=text] {
     width: 130px;
     box-sizing: border-box;
@@ -22,7 +26,7 @@
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: all 0.8s linear;
-    transition: all 0.4s linear; 
+    transition: all 0.4s linear;
     /* -webkit-transition: border 1.8s linear;
     transition: border 1.8s linear;  */
 }

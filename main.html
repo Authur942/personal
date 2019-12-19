@@ -12,10 +12,6 @@
 </head>
 
 <body>
-    <p style="position: fixed; top: 35%;left: 40%; z-index: 999;color: #ffffff;font-size: 40px;">AUTHUR&nbsp;&nbsp;&nbsp;Design</p>
-    <form>
-        <input class="dynamic-search" type="text" name="search" placeholder="Search" style="color: #ffffff;">
-    </form>
     <nav class="navbar" role="navigation" style="margin: 0;background-color: #000000;border-radius: 0;">
         <div class="container-fluid clear-padding">
             <!-- 导航头部 -->
@@ -52,11 +48,22 @@
             </div><!-- END .navbar-collapse -->
         </div>
     </nav>
+    <!-- 中央部分 -->
+    <div class="container-fluid" style="text-align:center;">
+        <div class="time">
+            <span id="nowTime"></span>
+        </div>
+        <div class="authur-txt">AUTHUR&nbsp;&nbsp;Design</div>
+        <form>
+            <input class="dynamic-search" type="text" name="search" placeholder="Search" style="color: #ffffff;">
+        </form>
+    </div>
+
     <!-- 轮播图 -->
-    <div class="container-fluid clear-padding">
+    <div class="container-fluid clear-padding" style="position: fixed;top: 0;left: 0;z-index: -2;">
         <div id="myNiceCarousel" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="none">
             <!-- 轮播背景 -->
-            <div class="carousel-inner" style="height: 690px;">
+            <div class="carousel-inner" style="height: 730px;">
                 <div class="item active">
                     <img alt="Third slide" src="static/images/lan12.jpg">
                 </div>
@@ -71,10 +78,7 @@
     </div>
 
 
-
-
-
-
+    <script src="JS/main.js"></script>
     <script src="JS/jquery-1.11.0.min.js"></script>
     <script src="JS/zui.min.js"></script>
 </body>

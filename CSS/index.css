@@ -1,4 +1,4 @@
-/* 我的基础样式 */
+/* 基础样式 */
 .clear-padding {
     padding: 0 !important;
 }
@@ -7,7 +7,15 @@
     padding: 0 !important;
 }
 
-/* 便签动画 */
+/* 特殊字体 */
+.sp {
+    font-family: 'Kunstler Script', 'Palace Script MT', 'Vladimir Script';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 80px;
+}
+
+/* 便签 */
 #mySidenav {
     position: fixed;
     top: 420px;
@@ -53,14 +61,7 @@
     background-color: #0d3d88;
 }
 
-/* 特殊字体 */
-.sp {
-    font-family: 'Kunstler Script', 'Palace Script MT', 'Vladimir Script';
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 80px;
-}
-
+/* 头部 */
 .contentone {
     background-image: url('../static/images/lanbojini.jpg');
     background-size: 100% 100%;
@@ -69,7 +70,7 @@
     height: 800px;
     margin-top: -20px;
 }
-
+/* 设计理念字体背景阴影 */
 .contentone-shadow {
     background-color: #000;
     opacity: 0.5;
@@ -84,6 +85,7 @@
     color: #ffffff;
 }
 
+
 /*导航栏 */
 nav {
     border-bottom: 2px solid #ffffff !important;
@@ -91,18 +93,20 @@ nav {
     top: 0;
     left: 0;
 }
-/* 标志样式 */
+
+/* 头部标志样式 */
 .icon1 {
     position: absolute;
     top: 80px;
     left: 30px;
     transition: all 0.8s ease;
 }
-.icon1:hover{
+
+.icon1:hover {
     transform: scale(1.2);
 }
 
-
+/* 头部大字体 */
 .text-box {
     height: 350px;
     text-align: center;
@@ -180,7 +184,7 @@ nav {
 .person-img>img:hover {
     opacity: .9;
     transform: matrix(1, 0, 0, 1, -30, 0);
-    
+
 }
 
 .person-title {
@@ -192,11 +196,10 @@ nav {
     text-align: center;
     height: 70px;
     background-color: #0d3d88;
-    /* border: 1px solid #000; */
     box-shadow: 0px 10px 5px #000;
     color: #ffffff;
     transform: none;
-    transition: all 0.6s linear;
+    transition: all 0.1s linear;
 
 }
 
@@ -211,7 +214,7 @@ nav {
 .text-bt:hover {
     opacity: 0.9;
     transform: scaleY(1.3);
-    
+
 }
 
 /* 轮播图 */
@@ -232,6 +235,7 @@ nav {
     height: 612px;
     flex-direction: column;
 }
+
 /* 窗帘 */
 .info-left div {
     background-color: #0d3d88;
@@ -242,6 +246,7 @@ nav {
     position: relative;
     width: 50%;
 }
+
 .overlay {
     position: absolute;
     bottom: 0%;
