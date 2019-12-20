@@ -1,3 +1,4 @@
+//时间函数
 var newDate ='';
 getLangDate();
 function dateFilter(date){
@@ -17,8 +18,9 @@ function getLangDate(){
   var hour = dateObj.getHours();//当前系统时间的小时值
   var minute = dateObj.getMinutes();//当前系统时间的分钟值
   var second = dateObj.getSeconds();//当前系统时间的秒钟值
+  // var Milliseconds = dateObj.getTime();//当前系统时间的毫秒值
   var timevalue = "" + ((hour>=12)?(hour>=18)? "晚上" : "下午" : "上午");//当前时间属于上午、晚上还是下午
-  newDate = dateFilter(year)+"-"+dateFilter(month)+"-"+dateFilter(date)+"&nbsp;&nbsp;"+dateFilter(hour)+":"+dateFilter(minute)+":"+dateFilter(second);
+  newDate = dateFilter(year)+"-"+dateFilter(month)+"-"+dateFilter(date)+"&nbsp;&nbsp;"+dateFilter(hour)+":"+dateFilter(minute)+":"+dateFilter(second)+"&nbsp;&nbsp;"+week;
   document.getElementById('nowTime').innerHTML = newDate;
   setTimeout(getLangDate,1000);
 }
